@@ -96,7 +96,7 @@ public class OpaAuthorizer implements Authorizer {
     }
   }
 
-  public String getValueOrDefault(String property, String defaultValue) {
+  private String getValueOrDefault(String property, String defaultValue) {
     return Optional.ofNullable((String) configs.get(property)).orElse(defaultValue);
   }
 
